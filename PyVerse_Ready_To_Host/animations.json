@@ -1,0 +1,437 @@
+[
+  {
+    "id": "anim-01",
+    "unit": 1,
+    "title": "Variables and References",
+    "tag": "Variables",
+    "scenes": [
+      {
+        "label": "Bind",
+        "code": "x = 10",
+        "detail": "A name refers to an integer object."
+      },
+      {
+        "label": "Rebind",
+        "code": "x = 20",
+        "detail": "Reassignment changes which object the name references."
+      },
+      {
+        "label": "Alias",
+        "code": "y = x",
+        "detail": "Both names can point at the same immutable value."
+      },
+      {
+        "label": "Remember",
+        "code": "name → object",
+        "detail": "Assignment binds names; it does not copy all objects."
+      }
+    ],
+    "video": "assets/videos/anim-01.mp4"
+  },
+  {
+    "id": "anim-02",
+    "unit": 1,
+    "title": "Python Collections",
+    "tag": "Data Structures",
+    "scenes": [
+      {
+        "label": "List",
+        "code": "[3, 1, 3]",
+        "detail": "Ordered and mutable; duplicates allowed."
+      },
+      {
+        "label": "Tuple",
+        "code": "(3, 1, 3)",
+        "detail": "Ordered and immutable container."
+      },
+      {
+        "label": "Set",
+        "code": "{1, 3}",
+        "detail": "Unique hashable items; no positional indexing."
+      },
+      {
+        "label": "Dictionary",
+        "code": "{\"a\": 3}",
+        "detail": "Keys map to values; insertion order preserved."
+      }
+    ],
+    "video": "assets/videos/anim-02.mp4"
+  },
+  {
+    "id": "anim-03",
+    "unit": 1,
+    "title": "Comparison Flow",
+    "tag": "Comparison",
+    "scenes": [
+      {
+        "label": "Input",
+        "code": "score = 82",
+        "detail": "Obtain an input value."
+      },
+      {
+        "label": "Evaluate",
+        "code": "score >= 75",
+        "detail": "Comparison produces True."
+      },
+      {
+        "label": "Combine",
+        "code": "score >= 75 and attendance >= 75",
+        "detail": "Boolean operators express conditions."
+      },
+      {
+        "label": "Decide",
+        "code": "eligible = True",
+        "detail": "The result guides program flow."
+      }
+    ],
+    "video": "assets/videos/anim-03.mp4"
+  },
+  {
+    "id": "anim-04",
+    "unit": 2,
+    "title": "Conditional Branching",
+    "tag": "Conditionals",
+    "scenes": [
+      {
+        "label": "Start",
+        "code": "score = 82",
+        "detail": "Read assessment value."
+      },
+      {
+        "label": "Decision A",
+        "code": "score >= 90 ?",
+        "detail": "False: proceed to the next condition."
+      },
+      {
+        "label": "Decision B",
+        "code": "score >= 75 ?",
+        "detail": "True: choose grade A."
+      },
+      {
+        "label": "Finish",
+        "code": "grade = \"A\"",
+        "detail": "Only the matching branch executes."
+      }
+    ],
+    "video": "assets/videos/anim-04.mp4"
+  },
+  {
+    "id": "anim-05",
+    "unit": 2,
+    "title": "Generators and yield",
+    "tag": "Generators",
+    "scenes": [
+      {
+        "label": "Create",
+        "code": "def seq(): yield 1; yield 2",
+        "detail": "Calling a generator function creates a generator."
+      },
+      {
+        "label": "First next()",
+        "code": "yield 1",
+        "detail": "Execution pauses after producing 1."
+      },
+      {
+        "label": "Resume",
+        "code": "yield 2",
+        "detail": "Local state resumes from the previous yield."
+      },
+      {
+        "label": "Stop",
+        "code": "StopIteration",
+        "detail": "After final yield, iteration completes."
+      }
+    ],
+    "video": "assets/videos/anim-05.mp4"
+  },
+  {
+    "id": "anim-06",
+    "unit": 2,
+    "title": "Decorators and Wrappers",
+    "tag": "Decorators",
+    "scenes": [
+      {
+        "label": "Function",
+        "code": "def greet(): ...",
+        "detail": "Define core behaviour."
+      },
+      {
+        "label": "Wrapper",
+        "code": "def log(fn): ...",
+        "detail": "Create an outer function that accepts a callable."
+      },
+      {
+        "label": "Apply",
+        "code": "@log",
+        "detail": "Replace function with a wrapped version."
+      },
+      {
+        "label": "Invoke",
+        "code": "greet()",
+        "detail": "Extra behaviour runs around original function."
+      }
+    ],
+    "video": "assets/videos/anim-06.mp4"
+  },
+  {
+    "id": "anim-07",
+    "unit": 3,
+    "title": "Importing Python Modules",
+    "tag": "Modules",
+    "scenes": [
+      {
+        "label": "Module",
+        "code": "math.py / math module",
+        "detail": "Definitions are grouped by module."
+      },
+      {
+        "label": "Import",
+        "code": "import math",
+        "detail": "Python loads or retrieves the module."
+      },
+      {
+        "label": "Resolve",
+        "code": "math.sqrt(81)",
+        "detail": "The name is looked up in its namespace."
+      },
+      {
+        "label": "Reuse",
+        "code": "9.0",
+        "detail": "Module operations are called from different programs."
+      }
+    ],
+    "video": "assets/videos/anim-07.mp4"
+  },
+  {
+    "id": "anim-08",
+    "unit": 3,
+    "title": "Class Inheritance",
+    "tag": "Inheritance",
+    "scenes": [
+      {
+        "label": "Parent",
+        "code": "class Person",
+        "detail": "Base class defines shared behaviour."
+      },
+      {
+        "label": "Child",
+        "code": "class Student(Person)",
+        "detail": "Subtype inherits accessible behaviour."
+      },
+      {
+        "label": "Method",
+        "code": "Student().describe()",
+        "detail": "Inherited method can be called."
+      },
+      {
+        "label": "Override",
+        "code": "def describe(self): ...",
+        "detail": "Subclass may provide specialized behaviour."
+      }
+    ],
+    "video": "assets/videos/anim-08.mp4"
+  },
+  {
+    "id": "anim-09",
+    "unit": 3,
+    "title": "super() and Method Resolution",
+    "tag": "super()",
+    "scenes": [
+      {
+        "label": "Initialize",
+        "code": "Person.__init__",
+        "detail": "Parent initializes common attributes."
+      },
+      {
+        "label": "Extend",
+        "code": "Student.__init__",
+        "detail": "Subclass defines additional attributes."
+      },
+      {
+        "label": "Delegate",
+        "code": "super().__init__(name)",
+        "detail": "Cooperative call follows resolution order."
+      },
+      {
+        "label": "Result",
+        "code": "self.name / self.register",
+        "detail": "Both base and new state are available."
+      }
+    ],
+    "video": "assets/videos/anim-09.mp4"
+  },
+  {
+    "id": "anim-10",
+    "unit": 4,
+    "title": "Unicode Encoding",
+    "tag": "Encoding",
+    "scenes": [
+      {
+        "label": "Text",
+        "code": "\"வணக்கம்\"",
+        "detail": "A Python str represents Unicode characters."
+      },
+      {
+        "label": "Encode",
+        "code": "text.encode(\"utf-8\")",
+        "detail": "Encoding produces bytes."
+      },
+      {
+        "label": "Transfer",
+        "code": "b\"...\"",
+        "detail": "Binary data can be stored or transmitted."
+      },
+      {
+        "label": "Decode",
+        "code": "data.decode(\"utf-8\")",
+        "detail": "Reconstruct the original text with the same encoding."
+      }
+    ],
+    "video": "assets/videos/anim-10.mp4"
+  },
+  {
+    "id": "anim-11",
+    "unit": 4,
+    "title": "From Files to Databases",
+    "tag": "Data Storage",
+    "scenes": [
+      {
+        "label": "Record",
+        "code": "{\"name\": \"Anu\"}",
+        "detail": "Start with a structured record."
+      },
+      {
+        "label": "Text",
+        "code": "JSON or CSV",
+        "detail": "Portable human-readable representations."
+      },
+      {
+        "label": "Relational",
+        "code": "SQLite table",
+        "detail": "Rows, schemas and SQL queries."
+      },
+      {
+        "label": "Document",
+        "code": "NoSQL database",
+        "detail": "Flexible nested document data models."
+      }
+    ],
+    "video": "assets/videos/anim-11.mp4"
+  },
+  {
+    "id": "anim-12",
+    "unit": 4,
+    "title": "HTTP Request–Response",
+    "tag": "Web Architecture",
+    "scenes": [
+      {
+        "label": "Client",
+        "code": "GET /courses",
+        "detail": "Browser or Python client requests a resource."
+      },
+      {
+        "label": "Transport",
+        "code": "HTTPS",
+        "detail": "Request crosses the network."
+      },
+      {
+        "label": "Server",
+        "code": "Route handler",
+        "detail": "Server processes an authenticated request."
+      },
+      {
+        "label": "Response",
+        "code": "200 + JSON",
+        "detail": "Client receives status and structured data."
+      }
+    ],
+    "video": "assets/videos/anim-12.mp4"
+  },
+  {
+    "id": "anim-13",
+    "unit": 5,
+    "title": "Producer–Consumer Queue",
+    "tag": "Concurrency",
+    "scenes": [
+      {
+        "label": "Produce",
+        "code": "enqueue(task)",
+        "detail": "Producer adds tasks to the queue."
+      },
+      {
+        "label": "Buffer",
+        "code": "[A, B, C]",
+        "detail": "Tasks wait until a consumer is ready."
+      },
+      {
+        "label": "Consume",
+        "code": "dequeue() → A",
+        "detail": "Consumer processes tasks in order."
+      },
+      {
+        "label": "Coordinate",
+        "code": "lock / Queue",
+        "detail": "Safe synchronization prevents races."
+      }
+    ],
+    "video": "assets/videos/anim-13.mp4"
+  },
+  {
+    "id": "anim-14",
+    "unit": 5,
+    "title": "Publish–Subscribe Messaging",
+    "tag": "Pub/Sub",
+    "scenes": [
+      {
+        "label": "Publish",
+        "code": "topic = \"quiz\"",
+        "detail": "Publisher emits an event."
+      },
+      {
+        "label": "Broker",
+        "code": "quiz → subscribers",
+        "detail": "Broker routes messages by topic."
+      },
+      {
+        "label": "Subscribe",
+        "code": "email + analytics",
+        "detail": "Independent subscribers register interest."
+      },
+      {
+        "label": "React",
+        "code": "send / aggregate",
+        "detail": "Consumers take separate actions."
+      }
+    ],
+    "video": "assets/videos/anim-14.mp4"
+  },
+  {
+    "id": "anim-15",
+    "unit": 5,
+    "title": "TCP/IP Socket Interaction",
+    "tag": "TCP/IP",
+    "scenes": [
+      {
+        "label": "Client",
+        "code": "connect(host, port)",
+        "detail": "Client initiates a TCP connection."
+      },
+      {
+        "label": "Handshake",
+        "code": "SYN → SYN/ACK → ACK",
+        "detail": "Connection establishment synchronizes endpoints."
+      },
+      {
+        "label": "Transfer",
+        "code": "send() / recv()",
+        "detail": "TCP transports ordered bytes."
+      },
+      {
+        "label": "Close",
+        "code": "close()",
+        "detail": "Endpoints release transport resources."
+      }
+    ],
+    "video": "assets/videos/anim-15.mp4"
+  }
+]

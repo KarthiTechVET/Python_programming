@@ -1,0 +1,3024 @@
+{
+  "course": "PYTHON PROGRAMMING",
+  "programme": "M.Sc. Computer Science",
+  "year": "2026–2027",
+  "institution": "VET Institute of Arts and Science (Co-education) College",
+  "faculty": "Dr. D. Karthika",
+  "hours": 75,
+  "credits": 4,
+  "units": [
+    {
+      "id": 1,
+      "title": "Introduction",
+      "hours": 15,
+      "ch": "Chapters 1–3",
+      "color": "#2563EB",
+      "outcome": "CO1",
+      "lessonCount": 9
+    },
+    {
+      "id": 2,
+      "title": "Code Structures",
+      "hours": 15,
+      "ch": "Chapter 4",
+      "color": "#0D9488",
+      "outcome": "CO1",
+      "lessonCount": 11
+    },
+    {
+      "id": 3,
+      "title": "Modules, Packages and Classes",
+      "hours": 15,
+      "ch": "Chapters 5–6",
+      "color": "#805AD5",
+      "outcome": "CO2, CO3",
+      "lessonCount": 16
+    },
+    {
+      "id": 4,
+      "title": "Data Types and Web",
+      "hours": 13,
+      "ch": "Chapters 7–9",
+      "color": "#C47518",
+      "outcome": "CO2, CO4",
+      "lessonCount": 10
+    },
+    {
+      "id": 5,
+      "title": "Systems and Networks",
+      "hours": 15,
+      "ch": "Chapters 10–11",
+      "color": "#D4527B",
+      "outcome": "CO5",
+      "lessonCount": 19
+    }
+  ],
+  "lessons": [
+    {
+      "id": "u1-01",
+      "unit": 1,
+      "title": "Introduction to Python",
+      "overview": "Python is a high-level, dynamically typed programming language with an emphasis on readable code. The interpreter executes statements and expressions; indentation defines code blocks. Python is useful for automation, web systems, scientific computation and network applications.",
+      "syntax": "print(\"Hello, Python!\")",
+      "code": "print(\"Welcome to M.Sc. Computer Science\")\nprint(\"Python version concepts: syntax, interpreter, modules\")",
+      "application": "Automate a repetitive laboratory record validation task.",
+      "tip": "Indentation is syntactically significant; never mix tabs and spaces.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "Welcome to M.Sc. Computer Science\nPython version concepts: syntax, interpreter, modules",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "print(\"Welcome to M.Sc. Computer Science\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 2,
+          "code": "print(\"Python version concepts: syntax, interpreter, modules\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Python is a high-level, dynamically typed programming language with an emphasis on readable code. The interpreter executes statements and expressions; indentation defines code blocks. Python is useful for automation, web systems, scientific computation and network applications.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Automate a repetitive laboratory record validation task.",
+        "Correctness and debugging: Indentation is syntactically significant; never mix tabs and spaces. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-02",
+      "unit": 1,
+      "title": "Numbers and Numeric Operations",
+      "overview": "Python provides int, float and complex numeric types. Arithmetic operators include +, -, *, /, //, %, and **; true division returns a float. Operator precedence matters, and floating-point arithmetic can involve representation error.",
+      "syntax": "total = (14 + 6) * 2\nprint(total)",
+      "code": "marks = [72, 84, 91]\naverage = sum(marks) / len(marks)\nprint(round(average, 2))\nprint(17 // 5, 17 % 5, 2 ** 5)",
+      "application": "Compute aggregate marks and basic statistical summaries.",
+      "tip": "Never compare floating-point results for exact equality when tolerance is needed.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "82.33\n3 2 32",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "marks = [72, 84, 91]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "average = sum(marks) / len(marks)",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(round(average, 2))",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(17 // 5, 17 % 5, 2 ** 5)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Python provides int, float and complex numeric types. Arithmetic operators include +, -, *, /, //, %, and **; true division returns a float. Operator precedence matters, and floating-point arithmetic can involve representation error.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Compute aggregate marks and basic statistical summaries.",
+        "Correctness and debugging: Never compare floating-point results for exact equality when tolerance is needed. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-03",
+      "unit": 1,
+      "title": "Strings and String Methods",
+      "overview": "A string is an immutable sequence of Unicode characters. Indexing, slicing, concatenation and methods such as strip(), split(), replace() and lower() support text processing. f-strings embed expressions in formatted output.",
+      "syntax": "text = \"Python\"\nprint(text[1:4])",
+      "code": "student = \"  Karthika  \"\nclean = student.strip().title()\nprint(f\"Student: {clean}\")\nprint(clean.lower().replace(\"a\", \"@\"))",
+      "application": "Normalize student names received from online forms.",
+      "tip": "Strings are immutable; methods return new strings rather than changing the original.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "Student: Karthika\nk@rthik@",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "student = \"  Karthika  \"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "clean = student.strip().title()",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(f\"Student: {clean}\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(clean.lower().replace(\"a\", \"@\"))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A string is an immutable sequence of Unicode characters. Indexing, slicing, concatenation and methods such as strip(), split(), replace() and lower() support text processing. f-strings embed expressions in formatted output.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Normalize student names received from online forms.",
+        "Correctness and debugging: Strings are immutable; methods return new strings rather than changing the original. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-04",
+      "unit": 1,
+      "title": "Variables, Assignment and Types",
+      "overview": "Names in Python reference objects rather than fixed, declared storage slots. Assignment binds a name to a value, and type() inspects an object’s type. Multiple assignment and unpacking can improve clarity.",
+      "syntax": "name = \"Asha\"\nage = 21",
+      "code": "name, score = \"Anu\", 94\nprint(name, score)\nscore += 3\nprint(type(score).__name__, score)",
+      "application": "Manage laboratory records containing names, roll numbers and scores.",
+      "tip": "Choose descriptive identifiers and avoid shadowing built-ins such as list or sum.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "Anu 94\nint 97",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "name, score = \"Anu\", 94",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "print(name, score)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 3,
+          "code": "score += 3",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "print(type(score).__name__, score)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Names in Python reference objects rather than fixed, declared storage slots. Assignment binds a name to a value, and type() inspects an object’s type. Multiple assignment and unpacking can improve clarity.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Manage laboratory records containing names, roll numbers and scores.",
+        "Correctness and debugging: Choose descriptive identifiers and avoid shadowing built-ins such as list or sum. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-05",
+      "unit": 1,
+      "title": "Lists and Mutability",
+      "overview": "A list is an ordered, mutable sequence that can hold heterogeneous objects. Indexing and slicing access positions, while append(), insert(), pop() and sort() modify a list. Copying matters because assignment may share object references.",
+      "syntax": "scores = [70, 80]\nscores.append(90)",
+      "code": "scores = [68, 92, 75]\nscores.append(85)\nscores.sort(reverse=True)\nprint(scores)\nprint(scores[:2])",
+      "application": "Maintain and rank examination marks.",
+      "tip": "Beware of aliasing: a = b does not copy a list.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "[92, 85, 75, 68]\n[92, 85]",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "scores = [68, 92, 75]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "scores.append(85)",
+          "meaning": "Appends an element to the existing mutable sequence."
+        },
+        {
+          "line": 3,
+          "code": "scores.sort(reverse=True)",
+          "meaning": "Reorders list elements using the specified sorting rule."
+        },
+        {
+          "line": 4,
+          "code": "print(scores)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 5,
+          "code": "print(scores[:2])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A list is an ordered, mutable sequence that can hold heterogeneous objects. Indexing and slicing access positions, while append(), insert(), pop() and sort() modify a list. Copying matters because assignment may share object references.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Maintain and rank examination marks.",
+        "Correctness and debugging: Beware of aliasing: a = b does not copy a list. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-06",
+      "unit": 1,
+      "title": "Tuples and Unpacking",
+      "overview": "A tuple is an ordered, immutable sequence. It is suitable for fixed records and values that should not be re-assigned at specific positions. Packing and unpacking assign multiple tuple elements to names.",
+      "syntax": "record = (\"IT\", 32)\ndept, count = record",
+      "code": "record = (\"MSc CS\", 33, 2026)\ncourse, strength, year = record\nprint(course, strength, year)\nprint(record.count(33))",
+      "application": "Represent fixed course metadata safely.",
+      "tip": "A tuple can still contain mutable objects; tuple immutability applies to its element references.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "MSc CS 33 2026\n1",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "record = (\"MSc CS\", 33, 2026)",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "course, strength, year = record",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(course, strength, year)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(record.count(33))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A tuple is an ordered, immutable sequence. It is suitable for fixed records and values that should not be re-assigned at specific positions. Packing and unpacking assign multiple tuple elements to names.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Represent fixed course metadata safely.",
+        "Correctness and debugging: A tuple can still contain mutable objects; tuple immutability applies to its element references. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-07",
+      "unit": 1,
+      "title": "Dictionaries",
+      "overview": "A dictionary maps unique hashable keys to values. Access keys using indexing or get(); items(), keys(), values() and update() support retrieval and modification. In modern Python, dictionaries preserve insertion order.",
+      "syntax": "marks = {\"Asha\": 80}\nprint(marks.get(\"Asha\"))",
+      "code": "marks = {\"Asha\": 85, \"Kiran\": 91}\nmarks[\"Asha\"] += 5\nfor student, score in marks.items():\n    print(student, score)",
+      "application": "Build a register-number-to-assessment-marks lookup.",
+      "tip": "Use get() or membership checks if the key may not exist.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "Asha 90\nKiran 91",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "marks = {\"Asha\": 85, \"Kiran\": 91}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "marks[\"Asha\"] += 5",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "for student, score in marks.items():",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 4,
+          "code": "    print(student, score)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A dictionary maps unique hashable keys to values. Access keys using indexing or get(); items(), keys(), values() and update() support retrieval and modification. In modern Python, dictionaries preserve insertion order.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build a register-number-to-assessment-marks lookup.",
+        "Correctness and debugging: Use get() or membership checks if the key may not exist. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-08",
+      "unit": 1,
+      "title": "Sets and Set Operations",
+      "overview": "A set is an unordered collection of distinct hashable elements. Union, intersection and difference efficiently compare membership across groups. Set elements do not have stable positional indexing.",
+      "syntax": "a = {1, 2, 3}\nb = {2, 3, 4}\nprint(a & b)",
+      "code": "python = {\"Asha\", \"Divya\", \"Bala\"}\ncloud = {\"Divya\", \"Bala\", \"Ravi\"}\nprint(sorted(python & cloud))\nprint(sorted(python | cloud))",
+      "application": "Find students enrolled in both Python and cloud courses.",
+      "tip": "An empty set uses set(), not {}; the latter creates an empty dictionary.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "['Bala', 'Divya']\n['Asha', 'Bala', 'Divya', 'Ravi']",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "python = {\"Asha\", \"Divya\", \"Bala\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "cloud = {\"Divya\", \"Bala\", \"Ravi\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(sorted(python & cloud))",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(sorted(python | cloud))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A set is an unordered collection of distinct hashable elements. Union, intersection and difference efficiently compare membership across groups. Set elements do not have stable positional indexing.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Find students enrolled in both Python and cloud courses.",
+        "Correctness and debugging: An empty set uses set(), not {}; the latter creates an empty dictionary. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u1-09",
+      "unit": 1,
+      "title": "Comparison and Boolean Expressions",
+      "overview": "Comparison operators such as ==, !=, <, <=, > and >= produce Boolean values. Use and, or and not to combine conditions. Membership (in) and identity (is) are distinct concepts.",
+      "syntax": "print(10 < 20 and 20 != 30)",
+      "code": "score, attendance = 78, 82\nprint(score >= 50 and attendance >= 75)\nprint(20 < score <= 100)",
+      "application": "Implement eligibility validation for exam registration.",
+      "tip": "Use == for value comparison; is tests object identity.",
+      "mode": "browser",
+      "chapter": "Chapters 1–3",
+      "outcome": "CO1",
+      "output": "True\nTrue",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "score, attendance = 78, 82",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "print(score >= 50 and attendance >= 75)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 3,
+          "code": "print(20 < score <= 100)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Comparison operators such as ==, !=, <, <=, > and >= produce Boolean values. Use and, or and not to combine conditions. Membership (in) and identity (is) are distinct concepts.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Implement eligibility validation for exam registration.",
+        "Correctness and debugging: Use == for value comparison; is tests object identity. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-01",
+      "unit": 2,
+      "title": "if, elif and else",
+      "overview": "Conditional control flow executes a branch when its Boolean condition is true. elif provides additional mutually exclusive tests, and else is the default branch. Conditions should be ordered to avoid unreachable cases.",
+      "syntax": "if condition:\n    ...\nelif other_condition:\n    ...\nelse:\n    ...",
+      "code": "score = 82\nif score >= 90:\n    grade = \"O\"\nelif score >= 75:\n    grade = \"A\"\nelse:\n    grade = \"B\"\nprint(grade)",
+      "application": "Calculate a grade based on predetermined assessment cutoffs.",
+      "tip": "The correct keyword is elif, not elseif.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "A",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "score = 82",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "if score >= 90:",
+          "meaning": "Evaluates a Boolean expression and enters the indented block when it is true."
+        },
+        {
+          "line": 3,
+          "code": "    grade = \"O\"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "elif score >= 75:",
+          "meaning": "Evaluates the next branch condition only if earlier conditions did not match."
+        },
+        {
+          "line": 5,
+          "code": "    grade = \"A\"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 6,
+          "code": "else:",
+          "meaning": "Runs the alternative block when the preceding condition does not match."
+        },
+        {
+          "line": 7,
+          "code": "    grade = \"B\"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 8,
+          "code": "print(grade)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Conditional control flow executes a branch when its Boolean condition is true. elif provides additional mutually exclusive tests, and else is the default branch. Conditions should be ordered to avoid unreachable cases.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Calculate a grade based on predetermined assessment cutoffs.",
+        "Correctness and debugging: The correct keyword is elif, not elseif. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-02",
+      "unit": 2,
+      "title": "while Loops",
+      "overview": "A while loop repeatedly executes a block while its condition remains true. Ensure the loop state changes or define a deliberate stopping mechanism. break terminates and continue skips to the next iteration.",
+      "syntax": "while condition:\n    statement",
+      "code": "counter = 1\ntotal = 0\nwhile counter <= 5:\n    total += counter\n    counter += 1\nprint(total)",
+      "application": "Accumulate readings until a stop condition is reached.",
+      "tip": "A missing state update can cause an infinite loop.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "15",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "counter = 1",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "total = 0",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "while counter <= 5:",
+          "meaning": "Repeats the indented block while the Boolean condition remains true."
+        },
+        {
+          "line": 4,
+          "code": "    total += counter",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 5,
+          "code": "    counter += 1",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 6,
+          "code": "print(total)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A while loop repeatedly executes a block while its condition remains true. Ensure the loop state changes or define a deliberate stopping mechanism. break terminates and continue skips to the next iteration.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Accumulate readings until a stop condition is reached.",
+        "Correctness and debugging: A missing state update can cause an infinite loop. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-03",
+      "unit": 2,
+      "title": "for Loops and range()",
+      "overview": "A for loop iterates over elements of any iterable. range() generates an arithmetic sequence; enumerate() supplies index-value pairs, and zip() traverses sequences together. break and continue control iteration.",
+      "syntax": "for item in iterable:\n    print(item)",
+      "code": "subjects = [\"Python\", \"DBMS\", \"AI\"]\nfor index, subject in enumerate(subjects, start=1):\n    print(index, subject)",
+      "application": "Process classroom attendance records one student at a time.",
+      "tip": "Do not modify a list while iterating unless you have designed for that behaviour.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "1 Python\n2 DBMS\n3 AI",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "subjects = [\"Python\", \"DBMS\", \"AI\"]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "for index, subject in enumerate(subjects, start=1):",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 3,
+          "code": "    print(index, subject)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A for loop iterates over elements of any iterable. range() generates an arithmetic sequence; enumerate() supplies index-value pairs, and zip() traverses sequences together. break and continue control iteration.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Process classroom attendance records one student at a time.",
+        "Correctness and debugging: Do not modify a list while iterating unless you have designed for that behaviour. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-04",
+      "unit": 2,
+      "title": "List Comprehensions",
+      "overview": "A list comprehension constructs a list from an iterable with an optional filter. It can make simple mappings concise, but deeply nested comprehensions can reduce readability.",
+      "syntax": "[expression for item in iterable if condition]",
+      "code": "numbers = range(1, 9)\nsquares = [x*x for x in numbers if x % 2 == 0]\nprint(squares)",
+      "application": "Transform and filter marks without manual append calls.",
+      "tip": "Prefer a normal loop when the logic becomes difficult to read.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "[4, 16, 36, 64]",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "numbers = range(1, 9)",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "squares = [x*x for x in numbers if x % 2 == 0]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(squares)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A list comprehension constructs a list from an iterable with an optional filter. It can make simple mappings concise, but deeply nested comprehensions can reduce readability.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Transform and filter marks without manual append calls.",
+        "Correctness and debugging: Prefer a normal loop when the logic becomes difficult to read. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-05",
+      "unit": 2,
+      "title": "Set and Dictionary Comprehensions",
+      "overview": "Set and dictionary comprehensions create collections declaratively. A dictionary comprehension expresses a key-value mapping, while a set comprehension automatically removes duplicates.",
+      "syntax": "{k: v for item in data}\n{f(x) for x in data}",
+      "code": "names = [\"Anu\", \"Bala\", \"Anu\"]\nlengths = {name: len(name) for name in names}\nunique_lengths = {len(name) for name in names}\nprint(lengths)\nprint(sorted(unique_lengths))",
+      "application": "Build fast lookups and unique lists during data preparation.",
+      "tip": "Remember that a dictionary key must be hashable.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "{'Anu': 3, 'Bala': 4}\n[3, 4]",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "names = [\"Anu\", \"Bala\", \"Anu\"]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "lengths = {name: len(name) for name in names}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "unique_lengths = {len(name) for name in names}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "print(lengths)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 5,
+          "code": "print(sorted(unique_lengths))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Set and dictionary comprehensions create collections declaratively. A dictionary comprehension expresses a key-value mapping, while a set comprehension automatically removes duplicates.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build fast lookups and unique lists during data preparation.",
+        "Correctness and debugging: Remember that a dictionary key must be hashable. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-06",
+      "unit": 2,
+      "title": "Functions and Parameters",
+      "overview": "A function packages a reusable computation using def. Parameters accept positional, keyword and default values; return supplies the result. Keep functions cohesive and document inputs and outputs.",
+      "syntax": "def function_name(parameter):\n    return parameter",
+      "code": "def percentage(obtained, total=100):\n    return round(obtained / total * 100, 1)\nprint(percentage(86))\nprint(percentage(37, 50))",
+      "application": "Design reusable assessment and grading utilities.",
+      "tip": "Avoid mutable default argument values such as def f(items=[]).",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "86.0\n74.0",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def percentage(obtained, total=100):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    return round(obtained / total * 100, 1)",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 3,
+          "code": "print(percentage(86))",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(percentage(37, 50))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A function packages a reusable computation using def. Parameters accept positional, keyword and default values; return supplies the result. Keep functions cohesive and document inputs and outputs.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Design reusable assessment and grading utilities.",
+        "Correctness and debugging: Avoid mutable default argument values such as def f(items=[]). Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-07",
+      "unit": 2,
+      "title": "Generators and yield",
+      "overview": "A generator function produces values lazily, suspending its execution at yield and resuming on the next request. Generators support efficient iteration without materializing entire sequences in memory.",
+      "syntax": "def generator():\n    yield value",
+      "code": "def squares(n):\n    for value in range(n):\n        yield value * value\nprint(list(squares(5)))",
+      "application": "Stream large record sets in a memory-efficient manner.",
+      "tip": "A generator is exhausted after a complete traversal.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "[0, 1, 4, 9, 16]",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def squares(n):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    for value in range(n):",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 3,
+          "code": "        yield value * value",
+          "meaning": "Emits a generator value while retaining execution state for the next iteration."
+        },
+        {
+          "line": 4,
+          "code": "print(list(squares(5)))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A generator function produces values lazily, suspending its execution at yield and resuming on the next request. Generators support efficient iteration without materializing entire sequences in memory.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Stream large record sets in a memory-efficient manner.",
+        "Correctness and debugging: A generator is exhausted after a complete traversal. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-08",
+      "unit": 2,
+      "title": "Decorators",
+      "overview": "A decorator wraps or modifies a callable, usually via a higher-order function. The @decorator syntax replaces a function name with the wrapped callable; functools.wraps preserves useful metadata.",
+      "syntax": "@decorator\ndef function():\n    ...",
+      "code": "from functools import wraps\ndef announce(fn):\n    @wraps(fn)\n    def wrapper(*args, **kwargs):\n        print(\"Starting\")\n        return fn(*args, **kwargs)\n    return wrapper\n@announce\ndef greet(name):\n    print(\"Hello\", name)\ngreet(\"Anu\")",
+      "application": "Add audit logs or timing checks around reusable functions.",
+      "tip": "Preserve return values and metadata when defining wrappers.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "Starting\nHello Anu",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from functools import wraps",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "def announce(fn):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "    @wraps(fn)",
+          "meaning": "Applies a decorator or descriptor behaviour to the following method."
+        },
+        {
+          "line": 4,
+          "code": "    def wrapper(*args, **kwargs):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 5,
+          "code": "        print(\"Starting\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 6,
+          "code": "        return fn(*args, **kwargs)",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "    return wrapper",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 8,
+          "code": "@announce",
+          "meaning": "Applies a decorator or descriptor behaviour to the following method."
+        },
+        {
+          "line": 9,
+          "code": "def greet(name):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 10,
+          "code": "    print(\"Hello\", name)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 11,
+          "code": "greet(\"Anu\")",
+          "meaning": "Performs this operation as part of the example’s computation."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A decorator wraps or modifies a callable, usually via a higher-order function. The @decorator syntax replaces a function name with the wrapped callable; functools.wraps preserves useful metadata.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Add audit logs or timing checks around reusable functions.",
+        "Correctness and debugging: Preserve return values and metadata when defining wrappers. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-09",
+      "unit": 2,
+      "title": "Namespaces and Scope",
+      "overview": "Python resolves variable names using local, enclosing, global and built-in scopes (LEGB). global and nonlocal alter assignments across scope boundaries; avoid hidden dependencies when possible.",
+      "syntax": "def outer():\n    x = 1\n    def inner():\n        return x",
+      "code": "def outer():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment\nnext_count = outer()\nprint(next_count(), next_count())",
+      "application": "Encapsulate counters and state in closures.",
+      "tip": "An assignment inside a function normally creates a local name.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "1 2",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def outer():",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    count = 0",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "    def increment():",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 4,
+          "code": "        nonlocal count",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 5,
+          "code": "        count += 1",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 6,
+          "code": "        return count",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "    return increment",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 8,
+          "code": "next_count = outer()",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 9,
+          "code": "print(next_count(), next_count())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Python resolves variable names using local, enclosing, global and built-in scopes (LEGB). global and nonlocal alter assignments across scope boundaries; avoid hidden dependencies when possible.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Encapsulate counters and state in closures.",
+        "Correctness and debugging: An assignment inside a function normally creates a local name. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-10",
+      "unit": 2,
+      "title": "try, except, else and finally",
+      "overview": "Exception handling separates expected failures from normal program flow. except catches selected exceptions, else runs only if no exception occurs, and finally runs for cleanup. Catch specific errors rather than blindly suppressing everything.",
+      "syntax": "try:\n    operation()\nexcept ValueError:\n    handle_problem()",
+      "code": "values = [\"5\", \"bad\", \"8\"]\nfor item in values:\n    try:\n        print(int(item) * 2)\n    except ValueError:\n        print(\"invalid input\")",
+      "application": "Validate externally submitted marks or numeric form data.",
+      "tip": "Do not use a broad except: pass, which hides defects.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "10\ninvalid input\n16",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "values = [\"5\", \"bad\", \"8\"]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "for item in values:",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 3,
+          "code": "    try:",
+          "meaning": "Starts an exception-aware section; errors can be handled in except blocks."
+        },
+        {
+          "line": 4,
+          "code": "        print(int(item) * 2)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 5,
+          "code": "    except ValueError:",
+          "meaning": "Catches the specified exception type and executes recovery logic."
+        },
+        {
+          "line": 6,
+          "code": "        print(\"invalid input\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Exception handling separates expected failures from normal program flow. except catches selected exceptions, else runs only if no exception occurs, and finally runs for cleanup. Catch specific errors rather than blindly suppressing everything.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Validate externally submitted marks or numeric form data.",
+        "Correctness and debugging: Do not use a broad except: pass, which hides defects. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u2-11",
+      "unit": 2,
+      "title": "User-defined Exceptions",
+      "overview": "Custom exceptions represent application-specific failure conditions. Create a subclass of Exception and raise it with an informative message. Handle the custom type at appropriate boundaries.",
+      "syntax": "class InvalidMark(Exception):\n    pass",
+      "code": "class InvalidMark(Exception):\n    pass\ndef validate(score):\n    if not 0 <= score <= 100:\n        raise InvalidMark(\"Score must be 0..100\")\n    return score\ntry:\n    validate(120)\nexcept InvalidMark as error:\n    print(error)",
+      "application": "Enforce institutional assessment validation rules.",
+      "tip": "Create exceptions for meaningful domain errors, not for ordinary control flow.",
+      "mode": "browser",
+      "chapter": "Chapter 4",
+      "outcome": "CO1",
+      "output": "Score must be 0..100",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class InvalidMark(Exception):",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    pass",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 3,
+          "code": "def validate(score):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 4,
+          "code": "    if not 0 <= score <= 100:",
+          "meaning": "Evaluates a Boolean expression and enters the indented block when it is true."
+        },
+        {
+          "line": 5,
+          "code": "        raise InvalidMark(\"Score must be 0..100\")",
+          "meaning": "Signals an exceptional condition to the caller."
+        },
+        {
+          "line": 6,
+          "code": "    return score",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "try:",
+          "meaning": "Starts an exception-aware section; errors can be handled in except blocks."
+        },
+        {
+          "line": 8,
+          "code": "    validate(120)",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 9,
+          "code": "except InvalidMark as error:",
+          "meaning": "Catches the specified exception type and executes recovery logic."
+        },
+        {
+          "line": 10,
+          "code": "    print(error)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Custom exceptions represent application-specific failure conditions. Create a subclass of Exception and raise it with an informative message. Handle the custom type at appropriate boundaries.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Enforce institutional assessment validation rules.",
+        "Correctness and debugging: Create exceptions for meaningful domain errors, not for ordinary control flow. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-01",
+      "unit": 3,
+      "title": "Standalone Programs",
+      "overview": "A standalone Python program typically resides in a .py file. The __name__ == \"__main__\" guard allows reusable functions to coexist with an executable entry point. Execution begins from a command line or an environment that imports the module.",
+      "syntax": "if __name__ == \"__main__\":\n    main()",
+      "code": "def main():\n    print(\"MSc Python utility started\")\nif __name__ == \"__main__\":\n    main()",
+      "application": "Build a command-line student report generator.",
+      "tip": "Use a main guard to avoid unintended work when a module is imported.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "MSc Python utility started",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def main():",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    print(\"MSc Python utility started\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 3,
+          "code": "if __name__ == \"__main__\":",
+          "meaning": "Evaluates a Boolean expression and enters the indented block when it is true."
+        },
+        {
+          "line": 4,
+          "code": "    main()",
+          "meaning": "Performs this operation as part of the example’s computation."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A standalone Python program typically resides in a .py file. The __name__ == \"__main__\" guard allows reusable functions to coexist with an executable entry point. Execution begins from a command line or an environment that imports the module.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build a command-line student report generator.",
+        "Correctness and debugging: Use a main guard to avoid unintended work when a module is imported. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-02",
+      "unit": 3,
+      "title": "Command-line Arguments",
+      "overview": "sys.argv contains command-line argument strings, including the script name. argparse supports typed options, help text and structured validation. The browser playground does not provide a full process command line.",
+      "syntax": "import argparse\nparser = argparse.ArgumentParser()",
+      "code": "import argparse\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--count\", type=int, default=3)\nargs = parser.parse_args([\"--count\", \"4\"])\nprint(args.count)",
+      "application": "Accept a course code and output format through command-line options.",
+      "tip": "Command-line arguments are text until you validate or convert them.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "4",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import argparse",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "parser = argparse.ArgumentParser()",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "parser.add_argument(\"--count\", type=int, default=3)",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 4,
+          "code": "args = parser.parse_args([\"--count\", \"4\"])",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 5,
+          "code": "print(args.count)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: sys.argv contains command-line argument strings, including the script name. argparse supports typed options, help text and structured validation. The browser playground does not provide a full process command line.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Accept a course code and output format through command-line options.",
+        "Correctness and debugging: Command-line arguments are text until you validate or convert them. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-03",
+      "unit": 3,
+      "title": "Modules, Packages and import",
+      "overview": "A module is a Python file containing definitions; a package groups related modules. import and from ... import resolve names through the import system. Local files may shadow standard library modules if named poorly.",
+      "syntax": "import math\nfrom pathlib import Path",
+      "code": "import math\nfrom collections import Counter\nprint(round(math.sqrt(81)))\nprint(Counter(\"banana\")[\"a\"])",
+      "application": "Separate grading, storage and report generation into reusable modules.",
+      "tip": "Avoid naming your own file random.py, json.py or other standard module names.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "9\n3",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import math",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "from collections import Counter",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 3,
+          "code": "print(round(math.sqrt(81)))",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(Counter(\"banana\")[\"a\"])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A module is a Python file containing definitions; a package groups related modules. import and from ... import resolve names through the import system. Local files may shadow standard library modules if named poorly.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Separate grading, storage and report generation into reusable modules.",
+        "Correctness and debugging: Avoid naming your own file random.py, json.py or other standard module names. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-04",
+      "unit": 3,
+      "title": "The Python Standard Library",
+      "overview": "The standard library supplies modules for paths, dates, collections, iteration, JSON, statistics and many other tasks. Learn how to consult module documentation rather than reinventing utilities.",
+      "syntax": "from statistics import mean\nprint(mean([10, 20]))",
+      "code": "from collections import deque\nfrom statistics import mean\nqueue = deque([72, 82, 92])\nprint(round(mean(queue), 1))\nprint(queue.popleft())",
+      "application": "Implement queues and statistics without external dependencies.",
+      "tip": "Check library documentation and compatibility before importing.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "82\n72",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from collections import deque",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "from statistics import mean",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 3,
+          "code": "queue = deque([72, 82, 92])",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "print(round(mean(queue), 1))",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 5,
+          "code": "print(queue.popleft())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: The standard library supplies modules for paths, dates, collections, iteration, JSON, statistics and many other tasks. Learn how to consult module documentation rather than reinventing utilities.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Implement queues and statistics without external dependencies.",
+        "Correctness and debugging: Check library documentation and compatibility before importing. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-05",
+      "unit": 3,
+      "title": "Classes and Objects",
+      "overview": "A class defines behavior and attributes shared across instances. __init__ initializes new objects; self refers to the receiving instance by convention. Instance fields preserve each object’s independent state.",
+      "syntax": "class Student:\n    def __init__(self, name):\n        self.name = name",
+      "code": "class Student:\n    def __init__(self, name, score):\n        self.name, self.score = name, score\n    def passed(self):\n        return self.score >= 50\nprint(Student(\"Anu\", 78).passed())",
+      "application": "Model student records and validation methods.",
+      "tip": "Do not omit self from instance method parameters.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "True",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Student:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def __init__(self, name, score):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        self.name, self.score = name, score",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "    def passed(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 5,
+          "code": "        return self.score >= 50",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 6,
+          "code": "print(Student(\"Anu\", 78).passed())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A class defines behavior and attributes shared across instances. __init__ initializes new objects; self refers to the receiving instance by convention. Instance fields preserve each object’s independent state.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Model student records and validation methods.",
+        "Correctness and debugging: Do not omit self from instance method parameters. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-06",
+      "unit": 3,
+      "title": "Inheritance",
+      "overview": "A subclass inherits behavior and attributes from a base class. Inheritance expresses an is-a relationship and should be used when the subtype genuinely satisfies the base abstraction.",
+      "syntax": "class Child(Parent):\n    pass",
+      "code": "class Person:\n    def describe(self):\n        return \"Person\"\nclass Student(Person):\n    pass\nprint(Student().describe())",
+      "application": "Represent shared fields for people and specialised student entities.",
+      "tip": "Prefer composition when the relationship is has-a, not is-a.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "Person",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Person:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def describe(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        return \"Person\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 4,
+          "code": "class Student(Person):",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 5,
+          "code": "    pass",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 6,
+          "code": "print(Student().describe())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A subclass inherits behavior and attributes from a base class. Inheritance expresses an is-a relationship and should be used when the subtype genuinely satisfies the base abstraction.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Represent shared fields for people and specialised student entities.",
+        "Correctness and debugging: Prefer composition when the relationship is has-a, not is-a. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-07",
+      "unit": 3,
+      "title": "Method Overriding",
+      "overview": "A subclass may redefine an inherited method to specialize behavior. Method selection occurs according to the class resolution order; a good override should respect the base method’s contract.",
+      "syntax": "class Child(Parent):\n    def display(self):\n        return \"child\"",
+      "code": "class Person:\n    def role(self):\n        return \"Person\"\nclass Faculty(Person):\n    def role(self):\n        return \"Faculty\"\nprint(Faculty().role())",
+      "application": "Customize role descriptions in an academic information system.",
+      "tip": "An override should preserve compatible method meaning and parameter expectations.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "Faculty",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Person:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def role(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        return \"Person\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 4,
+          "code": "class Faculty(Person):",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 5,
+          "code": "    def role(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 6,
+          "code": "        return \"Faculty\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "print(Faculty().role())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A subclass may redefine an inherited method to specialize behavior. Method selection occurs according to the class resolution order; a good override should respect the base method’s contract.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Customize role descriptions in an academic information system.",
+        "Correctness and debugging: An override should preserve compatible method meaning and parameter expectations. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-08",
+      "unit": 3,
+      "title": "Adding Methods in Subclasses",
+      "overview": "Subclasses can introduce methods not defined in a base class. Such methods represent specialized responsibilities and are callable on the specific subclass instance.",
+      "syntax": "class ResearchStudent(Student):\n    def submit_paper(self):\n        ...",
+      "code": "class Learner:\n    def learn(self):\n        return \"learning\"\nclass PGStudent(Learner):\n    def research(self):\n        return \"research project\"\nprint(PGStudent().research())",
+      "application": "Provide research-specific behavior for postgraduate students.",
+      "tip": "A method added to a subclass does not automatically exist on the parent class.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "research project",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Learner:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def learn(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        return \"learning\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 4,
+          "code": "class PGStudent(Learner):",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 5,
+          "code": "    def research(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 6,
+          "code": "        return \"research project\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "print(PGStudent().research())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Subclasses can introduce methods not defined in a base class. Such methods represent specialized responsibilities and are callable on the specific subclass instance.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Provide research-specific behavior for postgraduate students.",
+        "Correctness and debugging: A method added to a subclass does not automatically exist on the parent class. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-09",
+      "unit": 3,
+      "title": "Using super()",
+      "overview": "super() delegates method calls according to the method resolution order, making cooperative inheritance possible. It is commonly used in subclass constructors to initialise inherited state.",
+      "syntax": "class Child(Parent):\n    def __init__(self, name):\n        super().__init__(name)",
+      "code": "class Person:\n    def __init__(self, name):\n        self.name = name\nclass Student(Person):\n    def __init__(self, name, register):\n        super().__init__(name)\n        self.register = register\ns = Student(\"Anu\", \"CS01\")\nprint(s.name, s.register)",
+      "application": "Extend inherited student metadata without reimplementing initialization.",
+      "tip": "super() follows the method resolution order, not always an immediate parent in isolation.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "Anu CS01",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Person:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def __init__(self, name):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        self.name = name",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "class Student(Person):",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 5,
+          "code": "    def __init__(self, name, register):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 6,
+          "code": "        super().__init__(name)",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 7,
+          "code": "        self.register = register",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 8,
+          "code": "s = Student(\"Anu\", \"CS01\")",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 9,
+          "code": "print(s.name, s.register)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: super() delegates method calls according to the method resolution order, making cooperative inheritance possible. It is commonly used in subclass constructors to initialise inherited state.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Extend inherited student metadata without reimplementing initialization.",
+        "Correctness and debugging: super() follows the method resolution order, not always an immediate parent in isolation. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-10",
+      "unit": 3,
+      "title": "self, Attribute Access and Encapsulation",
+      "overview": "The first argument of an ordinary instance method is conventionally self. Instance state is accessed with dot notation. Python uses conventions and properties for encapsulation rather than rigid access modifiers.",
+      "syntax": "obj.attribute\nobj.method()",
+      "code": "class Counter:\n    def __init__(self):\n        self.value = 0\n    def add(self):\n        self.value += 1\nc = Counter()\nc.add()\nprint(c.value)",
+      "application": "Encapsulate counters used for attendance tracking.",
+      "tip": "Treat a leading underscore as an internal-use convention.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "1",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Counter:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def __init__(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        self.value = 0",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "    def add(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 5,
+          "code": "        self.value += 1",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 6,
+          "code": "c = Counter()",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 7,
+          "code": "c.add()",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 8,
+          "code": "print(c.value)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: The first argument of an ordinary instance method is conventionally self. Instance state is accessed with dot notation. Python uses conventions and properties for encapsulation rather than rigid access modifiers.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Encapsulate counters used for attendance tracking.",
+        "Correctness and debugging: Treat a leading underscore as an internal-use convention. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-11",
+      "unit": 3,
+      "title": "Properties and Attribute Validation",
+      "overview": "A property exposes getter and optionally setter logic using attribute-like syntax. This supports validation and computed attributes without changing the public interface.",
+      "syntax": "@property\ndef value(self):\n    return self._value",
+      "code": "class Result:\n    def __init__(self, score):\n        self.score = score\n    @property\n    def score(self):\n        return self._score\n    @score.setter\n    def score(self, value):\n        if not 0 <= value <= 100:\n            raise ValueError(\"invalid\")\n        self._score = value\nprint(Result(89).score)",
+      "application": "Validate scores consistently whenever attributes change.",
+      "tip": "Do not recursively reference the property inside its setter.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "89",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Result:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def __init__(self, score):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        self.score = score",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "    @property",
+          "meaning": "Applies a decorator or descriptor behaviour to the following method."
+        },
+        {
+          "line": 5,
+          "code": "    def score(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 6,
+          "code": "        return self._score",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "    @score.setter",
+          "meaning": "Applies a decorator or descriptor behaviour to the following method."
+        },
+        {
+          "line": 8,
+          "code": "    def score(self, value):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 9,
+          "code": "        if not 0 <= value <= 100:",
+          "meaning": "Evaluates a Boolean expression and enters the indented block when it is true."
+        },
+        {
+          "line": 10,
+          "code": "            raise ValueError(\"invalid\")",
+          "meaning": "Signals an exceptional condition to the caller."
+        },
+        {
+          "line": 11,
+          "code": "        self._score = value",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 12,
+          "code": "print(Result(89).score)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A property exposes getter and optionally setter logic using attribute-like syntax. This supports validation and computed attributes without changing the public interface.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Validate scores consistently whenever attributes change.",
+        "Correctness and debugging: Do not recursively reference the property inside its setter. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-12",
+      "unit": 3,
+      "title": "Name Mangling for Privacy",
+      "overview": "A name beginning with two underscores (and not ending with two) is transformed within a class to reduce accidental collisions in subclasses. This is name mangling, not strong security or true private storage.",
+      "syntax": "class Example:\n    def __init__(self):\n        self.__value = 1",
+      "code": "class Credential:\n    def __init__(self, token):\n        self.__token = token\n    def masked(self):\n        return \"***\" + self.__token[-2:]\nprint(Credential(\"ABCD12\").masked())",
+      "application": "Avoid accidental modification of implementation details.",
+      "tip": "Do not rely on name mangling to protect secrets.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "***12",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Credential:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def __init__(self, token):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        self.__token = token",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "    def masked(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 5,
+          "code": "        return \"***\" + self.__token[-2:]",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 6,
+          "code": "print(Credential(\"ABCD12\").masked())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A name beginning with two underscores (and not ending with two) is transformed within a class to reduce accidental collisions in subclasses. This is name mangling, not strong security or true private storage.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Avoid accidental modification of implementation details.",
+        "Correctness and debugging: Do not rely on name mangling to protect secrets. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-13",
+      "unit": 3,
+      "title": "Instance, Class and Static Methods",
+      "overview": "Instance methods receive self, class methods receive cls and use @classmethod, while @staticmethod methods receive neither automatically. Choose based on whether behavior needs instance or class state.",
+      "syntax": "@classmethod\ndef make(cls):\n    return cls()",
+      "code": "class Tool:\n    name = \"Python\"\n    @classmethod\n    def label(cls):\n        return cls.name\n    @staticmethod\n    def twice(x):\n        return x * 2\nprint(Tool.label(), Tool.twice(4))",
+      "application": "Build convenient alternate constructors and utility operations.",
+      "tip": "A static method does not receive self or cls implicitly.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "Python 8",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Tool:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    name = \"Python\"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "    @classmethod",
+          "meaning": "Applies a decorator or descriptor behaviour to the following method."
+        },
+        {
+          "line": 4,
+          "code": "    def label(cls):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 5,
+          "code": "        return cls.name",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 6,
+          "code": "    @staticmethod",
+          "meaning": "Applies a decorator or descriptor behaviour to the following method."
+        },
+        {
+          "line": 7,
+          "code": "    def twice(x):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 8,
+          "code": "        return x * 2",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 9,
+          "code": "print(Tool.label(), Tool.twice(4))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Instance methods receive self, class methods receive cls and use @classmethod, while @staticmethod methods receive neither automatically. Choose based on whether behavior needs instance or class state.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build convenient alternate constructors and utility operations.",
+        "Correctness and debugging: A static method does not receive self or cls implicitly. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-14",
+      "unit": 3,
+      "title": "Duck Typing and Polymorphism",
+      "overview": "Duck typing focuses on supported behavior rather than inheritance relationships. Any object implementing the operations a function needs can participate, enabling flexible composition and polymorphism.",
+      "syntax": "def announce(obj):\n    print(obj.message())",
+      "code": "class Email:\n    def message(self):\n        return \"Mail sent\"\nclass SMS:\n    def message(self):\n        return \"SMS sent\"\ndef notify(channel):\n    print(channel.message())\nnotify(Email())\nnotify(SMS())",
+      "application": "Support interchangeable communication channels.",
+      "tip": "Validate the expected protocol or handle missing methods where appropriate.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "Mail sent\nSMS sent",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Email:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def message(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        return \"Mail sent\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 4,
+          "code": "class SMS:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 5,
+          "code": "    def message(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 6,
+          "code": "        return \"SMS sent\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 7,
+          "code": "def notify(channel):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 8,
+          "code": "    print(channel.message())",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 9,
+          "code": "notify(Email())",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 10,
+          "code": "notify(SMS())",
+          "meaning": "Performs this operation as part of the example’s computation."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Duck typing focuses on supported behavior rather than inheritance relationships. Any object implementing the operations a function needs can participate, enabling flexible composition and polymorphism.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Support interchangeable communication channels.",
+        "Correctness and debugging: Validate the expected protocol or handle missing methods where appropriate. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-15",
+      "unit": 3,
+      "title": "Special Methods",
+      "overview": "Dunder methods such as __str__, __len__, __eq__ and __add__ define how objects interact with built-in operations and operators. Implement them consistently with the represented abstraction.",
+      "syntax": "def __str__(self):\n    return \"representation\"",
+      "code": "class Course:\n    def __init__(self, name, students):\n        self.name, self.students = name, students\n    def __len__(self):\n        return len(self.students)\nc = Course(\"Python\", [\"Anu\", \"Bala\"])\nprint(len(c))",
+      "application": "Create domain classes that behave naturally with Python tools.",
+      "tip": "Do not invent operator behavior that violates users’ expectations.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "2",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Course:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def __init__(self, name, students):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        self.name, self.students = name, students",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "    def __len__(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 5,
+          "code": "        return len(self.students)",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 6,
+          "code": "c = Course(\"Python\", [\"Anu\", \"Bala\"])",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 7,
+          "code": "print(len(c))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Dunder methods such as __str__, __len__, __eq__ and __add__ define how objects interact with built-in operations and operators. Implement them consistently with the represented abstraction.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Create domain classes that behave naturally with Python tools.",
+        "Correctness and debugging: Do not invent operator behavior that violates users’ expectations. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u3-16",
+      "unit": 3,
+      "title": "Composition",
+      "overview": "Composition assembles objects from smaller collaborators, modelling has-a relationships. It often produces more flexible designs than large inheritance trees by separating responsibilities.",
+      "syntax": "class School:\n    def __init__(self, course):\n        self.course = course",
+      "code": "class Logger:\n    def write(self, message):\n        print(\"LOG:\", message)\nclass Enrollment:\n    def __init__(self, logger):\n        self.logger = logger\n    def save(self):\n        self.logger.write(\"enrolled\")\nEnrollment(Logger()).save()",
+      "application": "Compose enrollment services from reusable logging or storage components.",
+      "tip": "Use composition when functionality varies independently of object type.",
+      "mode": "browser",
+      "chapter": "Chapters 5–6",
+      "outcome": "CO2, CO3",
+      "output": "LOG: enrolled",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "class Logger:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 2,
+          "code": "    def write(self, message):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "        print(\"LOG:\", message)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "class Enrollment:",
+          "meaning": "Declares a class; its methods describe the behaviour of its objects."
+        },
+        {
+          "line": 5,
+          "code": "    def __init__(self, logger):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 6,
+          "code": "        self.logger = logger",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 7,
+          "code": "    def save(self):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 8,
+          "code": "        self.logger.write(\"enrolled\")",
+          "meaning": "Writes textual or binary content into a destination resource."
+        },
+        {
+          "line": 9,
+          "code": "Enrollment(Logger()).save()",
+          "meaning": "Performs this operation as part of the example’s computation."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Composition assembles objects from smaller collaborators, modelling has-a relationships. It often produces more flexible designs than large inheritance trees by separating responsibilities.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Compose enrollment services from reusable logging or storage components.",
+        "Correctness and debugging: Use composition when functionality varies independently of object type. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-01",
+      "unit": 4,
+      "title": "Unicode Text and String Formatting",
+      "overview": "Python str stores Unicode text and supports indexing, Unicode normalization and formatting. Encode converts text to bytes; decode reverses it with an agreed encoding such as UTF-8.",
+      "syntax": "text.encode(\"utf-8\")",
+      "code": "text = \"வணக்கம் Python\"\nencoded = text.encode(\"utf-8\")\nprint(encoded.decode(\"utf-8\"))\nprint(f\"Characters: {len(text)}\")",
+      "application": "Handle multilingual educational applications safely.",
+      "tip": "Text characters and encoded byte lengths are not necessarily equal.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "வணக்கம் Python\nCharacters: 14",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "text = \"வணக்கம் Python\"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "encoded = text.encode(\"utf-8\")",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(encoded.decode(\"utf-8\"))",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(f\"Characters: {len(text)}\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Python str stores Unicode text and supports indexing, Unicode normalization and formatting. Encode converts text to bytes; decode reverses it with an agreed encoding such as UTF-8.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Handle multilingual educational applications safely.",
+        "Correctness and debugging: Text characters and encoded byte lengths are not necessarily equal. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-02",
+      "unit": 4,
+      "title": "Binary Data: bytes, bytearray and struct",
+      "overview": "bytes is immutable binary data; bytearray is mutable. The struct module encodes fixed-size values into binary formats using documented byte order and field layouts.",
+      "syntax": "payload = bytes([65, 66])\nprint(payload)",
+      "code": "import struct\npacket = struct.pack(\">H\", 500)\nprint(packet.hex())\nprint(struct.unpack(\">H\", packet)[0])",
+      "application": "Represent and parse binary network packet headers.",
+      "tip": "Always specify byte order and field widths for portable binary interchange.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "01f4\n500",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import struct",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "packet = struct.pack(\">H\", 500)",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(packet.hex())",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(struct.unpack(\">H\", packet)[0])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: bytes is immutable binary data; bytearray is mutable. The struct module encodes fixed-size values into binary formats using documented byte order and field layouts.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Represent and parse binary network packet headers.",
+        "Correctness and debugging: Always specify byte order and field widths for portable binary interchange. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-03",
+      "unit": 4,
+      "title": "File Input and Output",
+      "overview": "Use open() with mode and encoding to read or write files. The with statement closes a file automatically even when an exception occurs. Reading untrusted input requires validation.",
+      "syntax": "with open(\"notes.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"hello\")",
+      "code": "from io import StringIO\nbuffer = StringIO()\nbuffer.write(\"course,score\\nPython,90\\n\")\nbuffer.seek(0)\nprint(buffer.read().strip())",
+      "application": "Export and import class results through text files.",
+      "tip": "Use with open() for real files; the demo uses in-memory StringIO to stay browser-compatible.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "course,score\nPython,90",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from io import StringIO",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "buffer = StringIO()",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "buffer.write(\"course,score\\nPython,90\\n\")",
+          "meaning": "Writes textual or binary content into a destination resource."
+        },
+        {
+          "line": 4,
+          "code": "buffer.seek(0)",
+          "meaning": "Performs this operation as part of the example’s computation."
+        },
+        {
+          "line": 5,
+          "code": "print(buffer.read().strip())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Use open() with mode and encoding to read or write files. The with statement closes a file automatically even when an exception occurs. Reading untrusted input requires validation.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Export and import class results through text files.",
+        "Correctness and debugging: Use with open() for real files; the demo uses in-memory StringIO to stay browser-compatible. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-04",
+      "unit": 4,
+      "title": "Structured Text: CSV, JSON, XML and YAML",
+      "overview": "Structured text formats organise information for interoperability. csv handles delimited rows; json supports common nested primitives, and XML stores tagged trees. YAML requires a separate supported parser.",
+      "syntax": "import json\ndata = json.loads(\"{\\\"ok\\\": true}\")",
+      "code": "import json\nrecord = {\"course\": \"Python\", \"students\": 33}\nmessage = json.dumps(record)\nprint(message)\nprint(json.loads(message)[\"students\"])",
+      "application": "Exchange student data with other academic systems.",
+      "tip": "Do not use eval() to parse JSON or load untrusted YAML with unsafe loaders.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "{\"course\": \"Python\", \"students\": 33}\n33",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import json",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "record = {\"course\": \"Python\", \"students\": 33}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "message = json.dumps(record)",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 4,
+          "code": "print(message)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 5,
+          "code": "print(json.loads(message)[\"students\"])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Structured text formats organise information for interoperability. csv handles delimited rows; json supports common nested primitives, and XML stores tagged trees. YAML requires a separate supported parser.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Exchange student data with other academic systems.",
+        "Correctness and debugging: Do not use eval() to parse JSON or load untrusted YAML with unsafe loaders. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-05",
+      "unit": 4,
+      "title": "Structured Binary Files",
+      "overview": "Binary formats preserve typed data efficiently and may require dedicated readers (for example HDF5). Python pickle is Python-specific and unsafe for untrusted input. Distinguish interoperability from convenience.",
+      "syntax": "import struct\nstruct.pack(\">I\", 2026)",
+      "code": "from array import array\nnumbers = array(\"i\", [3, 5, 7])\nprint(numbers.tolist())\nprint(numbers.tobytes().__len__() > 0)",
+      "application": "Store compact numerical records for analysis.",
+      "tip": "Never unpickle data from untrusted sources.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "[3, 5, 7]\nTrue",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from array import array",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "numbers = array(\"i\", [3, 5, 7])",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(numbers.tolist())",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(numbers.tobytes().__len__() > 0)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Binary formats preserve typed data efficiently and may require dedicated readers (for example HDF5). Python pickle is Python-specific and unsafe for untrusted input. Distinguish interoperability from convenience.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Store compact numerical records for analysis.",
+        "Correctness and debugging: Never unpickle data from untrusted sources. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-06",
+      "unit": 4,
+      "title": "Relational Databases and SQLite",
+      "overview": "Relational databases store structured data in tables joined by keys. SQL supports SELECT, INSERT, UPDATE and DELETE. sqlite3 is part of Python and supports parameterized queries to prevent SQL injection.",
+      "syntax": "cursor.execute(\"SELECT * FROM students WHERE id=?\", (id,))",
+      "code": "import sqlite3\ncon = sqlite3.connect(\":memory:\")\ncon.execute(\"CREATE TABLE students(name TEXT, score INTEGER)\")\ncon.execute(\"INSERT INTO students VALUES(?, ?)\", (\"Anu\", 88))\nprint(con.execute(\"SELECT score FROM students\").fetchone()[0])\ncon.close()",
+      "application": "Store normalized student records and fetch aggregate reports.",
+      "tip": "Never concatenate untrusted input into SQL statements.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "88",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import sqlite3",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "con = sqlite3.connect(\":memory:\")",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "con.execute(\"CREATE TABLE students(name TEXT, score INTEGER)\")",
+          "meaning": "Executes a database statement; parameter binding separates values from SQL syntax."
+        },
+        {
+          "line": 4,
+          "code": "con.execute(\"INSERT INTO students VALUES(?, ?)\", (\"Anu\", 88))",
+          "meaning": "Executes a database statement; parameter binding separates values from SQL syntax."
+        },
+        {
+          "line": 5,
+          "code": "print(con.execute(\"SELECT score FROM students\").fetchone()[0])",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 6,
+          "code": "con.close()",
+          "meaning": "Performs this operation as part of the example’s computation."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Relational databases store structured data in tables joined by keys. SQL supports SELECT, INSERT, UPDATE and DELETE. sqlite3 is part of Python and supports parameterized queries to prevent SQL injection.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Store normalized student records and fetch aggregate reports.",
+        "Correctness and debugging: Never concatenate untrusted input into SQL statements. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-07",
+      "unit": 4,
+      "title": "NoSQL Data Stores",
+      "overview": "NoSQL databases use diverse models such as document, key-value, graph and column-family storage. Select a model based on query patterns, scalability, consistency and schema needs, not as a universal replacement for SQL.",
+      "syntax": "document = {\"id\": 1, \"skills\": [\"Python\"]}",
+      "code": "document = {\"name\": \"Anu\", \"skills\": [\"Python\", \"AI\"]}\nprint(document[\"skills\"][1])\nprint(sorted(document.keys()))",
+      "application": "Model flexible learning-analytics event records.",
+      "tip": "Real Redis or MongoDB connections require a compatible external service.",
+      "mode": "local",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "document = {\"name\": \"Anu\", \"skills\": [\"Python\", \"AI\"]}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "print(document[\"skills\"][1])",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 3,
+          "code": "print(sorted(document.keys()))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: NoSQL databases use diverse models such as document, key-value, graph and column-family storage. Select a model based on query patterns, scalability, consistency and schema needs, not as a universal replacement for SQL.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Model flexible learning-analytics event records.",
+        "Correctness and debugging: Real Redis or MongoDB connections require a compatible external service. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-08",
+      "unit": 4,
+      "title": "Web Clients and HTTP",
+      "overview": "An HTTP client sends requests to a server and interprets status codes, headers and response bodies. Python urllib and requests are common client interfaces; browser security policies differ from native Python.",
+      "syntax": "from urllib.request import urlopen\n# Requires permitted networking",
+      "code": "from urllib.parse import urlencode, urlparse\nquery = urlencode({\"course\": \"Python\", \"unit\": 4})\nprint(query)\nprint(urlparse(\"https://example.org/api\").scheme)",
+      "application": "Build a client to retrieve course resources from a documented API.",
+      "tip": "Remote network requests may not work inside a browser Python interpreter.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "course=Python&unit=4\nhttps",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from urllib.parse import urlencode, urlparse",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "query = urlencode({\"course\": \"Python\", \"unit\": 4})",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(query)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(urlparse(\"https://example.org/api\").scheme)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: An HTTP client sends requests to a server and interprets status codes, headers and response bodies. Python urllib and requests are common client interfaces; browser security policies differ from native Python.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build a client to retrieve course resources from a documented API.",
+        "Correctness and debugging: Remote network requests may not work inside a browser Python interpreter. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-09",
+      "unit": 4,
+      "title": "Web Servers and Routes",
+      "overview": "A web server listens for requests and returns responses. Routes map paths and HTTP methods to handler functions; frameworks such as Flask facilitate web applications. Deploy servers only in controlled environments.",
+      "syntax": "@app.get(\"/courses\")\ndef courses():\n    return {\"course\": \"Python\"}",
+      "code": "def route(path):\n    routes = {\"/\": \"Home\", \"/courses\": \"Course catalog\"}\n    return routes.get(path, \"404 Not Found\")\nprint(route(\"/courses\"))",
+      "application": "Serve an academic portal and REST endpoints.",
+      "tip": "A real Flask/ASGI server cannot be started inside the browser playground.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "Course catalog",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def route(path):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    routes = {\"/\": \"Home\", \"/courses\": \"Course catalog\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "    return routes.get(path, \"404 Not Found\")",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 4,
+          "code": "print(route(\"/courses\"))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A web server listens for requests and returns responses. Routes map paths and HTTP methods to handler functions; frameworks such as Flask facilitate web applications. Deploy servers only in controlled environments.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Serve an academic portal and REST endpoints.",
+        "Correctness and debugging: A real Flask/ASGI server cannot be started inside the browser playground. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u4-10",
+      "unit": 4,
+      "title": "Web Services and Automation",
+      "overview": "A web API exposes application functions through standardized requests and responses, commonly JSON over HTTP. Automation clients orchestrate requests but must respect access permissions, rate limits and privacy.",
+      "syntax": "import json\npayload = json.dumps({\"status\": \"ok\"})",
+      "code": "import json\ndef response(status, data):\n    return json.dumps({\"status\": status, \"data\": data})\nprint(response(200, {\"unit\": 4}))",
+      "application": "Create an API to share approved assessment summaries.",
+      "tip": "Keep API tokens on the server and validate every request.",
+      "mode": "browser",
+      "chapter": "Chapters 7–9",
+      "outcome": "CO2, CO4",
+      "output": "{\"status\": 200, \"data\": {\"unit\": 4}}",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import json",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "def response(status, data):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 3,
+          "code": "    return json.dumps({\"status\": status, \"data\": data})",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 4,
+          "code": "print(response(200, {\"unit\": 4}))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A web API exposes application functions through standardized requests and responses, commonly JSON over HTTP. Automation clients orchestrate requests but must respect access permissions, rate limits and privacy.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Create an API to share approved assessment summaries.",
+        "Correctness and debugging: Keep API tokens on the server and validate every request. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-01",
+      "unit": 5,
+      "title": "Files and pathlib",
+      "overview": "pathlib offers object-oriented path handling for filesystem tasks, while os and shutil support metadata and copy/move operations. Validate path boundaries before manipulating user-supplied files.",
+      "syntax": "from pathlib import Path\npath = Path(\"data\")",
+      "code": "from pathlib import PurePosixPath\npath = PurePosixPath(\"courses/python/unit5.py\")\nprint(path.name)\nprint(path.parent)",
+      "application": "Organise reusable course material and submitted projects.",
+      "tip": "Do not trust arbitrary user-provided paths; protect against path traversal.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "unit5.py\ncourses/python",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from pathlib import PurePosixPath",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "path = PurePosixPath(\"courses/python/unit5.py\")",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(path.name)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(path.parent)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: pathlib offers object-oriented path handling for filesystem tasks, while os and shutil support metadata and copy/move operations. Validate path boundaries before manipulating user-supplied files.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Organise reusable course material and submitted projects.",
+        "Correctness and debugging: Do not trust arbitrary user-provided paths; protect against path traversal. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-02",
+      "unit": 5,
+      "title": "Directories and Traversal",
+      "overview": "Directories group files hierarchically. pathlib.Path.iterdir(), glob and os.walk support discovery. Iteration over large trees should account for permissions, errors and symbolic links.",
+      "syntax": "from pathlib import Path\nPath(\"work\").mkdir(exist_ok=True)",
+      "code": "from pathlib import PurePath\np = PurePath(\"course/units/unit5.txt\")\nprint(p.parts)\nprint(p.suffix)",
+      "application": "Index uploaded assignment files by directory and extension.",
+      "tip": "Avoid destructive directory operations without confirmation.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "('course', 'units', 'unit5.txt')\n.txt",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from pathlib import PurePath",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "p = PurePath(\"course/units/unit5.txt\")",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(p.parts)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 4,
+          "code": "print(p.suffix)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Directories group files hierarchically. pathlib.Path.iterdir(), glob and os.walk support discovery. Iteration over large trees should account for permissions, errors and symbolic links.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Index uploaded assignment files by directory and extension.",
+        "Correctness and debugging: Avoid destructive directory operations without confirmation. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-03",
+      "unit": 5,
+      "title": "Programs and Processes",
+      "overview": "An operating-system process has its own execution context. subprocess can launch a program and capture status/output; multiprocessing can use multiple processes for parallel work. Process creation requires local/server Python.",
+      "syntax": "import subprocess\nsubprocess.run([\"python\", \"--version\"], check=True)",
+      "code": "import os\nprint(\"Process APIs are environment-dependent\")\nprint(hasattr(os, \"getpid\"))",
+      "application": "Execute controlled grading utilities in isolated processes.",
+      "tip": "Never pass arbitrary user input to shell=True.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import os",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "print(\"Process APIs are environment-dependent\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 3,
+          "code": "print(hasattr(os, \"getpid\"))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: An operating-system process has its own execution context. subprocess can launch a program and capture status/output; multiprocessing can use multiple processes for parallel work. Process creation requires local/server Python.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Execute controlled grading utilities in isolated processes.",
+        "Correctness and debugging: Never pass arbitrary user input to shell=True. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-04",
+      "unit": 5,
+      "title": "Calendars, Clocks and Datetime",
+      "overview": "datetime represents dates and times; time measures durations and exposes clocks. Timezone-aware values are preferred for distributed services. Use monotonic clocks to measure elapsed time.",
+      "syntax": "from datetime import date\nprint(date(2026, 12, 7))",
+      "code": "from datetime import date, timedelta\nstart = date(2026, 12, 7)\nprint((start + timedelta(days=12)).isoformat())",
+      "application": "Schedule laboratory sessions and assessment deadlines.",
+      "tip": "Avoid mixing naive and timezone-aware datetimes.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "2026-12-19",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from datetime import date, timedelta",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "start = date(2026, 12, 7)",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print((start + timedelta(days=12)).isoformat())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: datetime represents dates and times; time measures durations and exposes clocks. Timezone-aware values are preferred for distributed services. Use monotonic clocks to measure elapsed time.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Schedule laboratory sessions and assessment deadlines.",
+        "Correctness and debugging: Avoid mixing naive and timezone-aware datetimes. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-05",
+      "unit": 5,
+      "title": "Queues and Producer-Consumer",
+      "overview": "A queue provides ordered task handoff between producers and consumers. queue.Queue is thread-safe, while asyncio.Queue serves coroutines. Enqueue/dequeue patterns coordinate asynchronous processing.",
+      "syntax": "from collections import deque\nq = deque([\"task1\"])",
+      "code": "from collections import deque\nqueue = deque([\"compile\", \"grade\", \"email\"])\nwhile queue:\n    print(\"Running\", queue.popleft())",
+      "application": "Build a background workflow for quiz grading and notification delivery.",
+      "tip": "Choose the concurrency-safe queue type for your execution model.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Running compile\nRunning grade\nRunning email",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from collections import deque",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "queue = deque([\"compile\", \"grade\", \"email\"])",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "while queue:",
+          "meaning": "Repeats the indented block while the Boolean condition remains true."
+        },
+        {
+          "line": 4,
+          "code": "    print(\"Running\", queue.popleft())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A queue provides ordered task handoff between producers and consumers. queue.Queue is thread-safe, while asyncio.Queue serves coroutines. Enqueue/dequeue patterns coordinate asynchronous processing.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build a background workflow for quiz grading and notification delivery.",
+        "Correctness and debugging: Choose the concurrency-safe queue type for your execution model. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-06",
+      "unit": 5,
+      "title": "Threads and Concurrency",
+      "overview": "Threads share process memory and are useful for overlapping I/O-bound work. Race conditions arise when operations on shared state interleave. Locks and queues can protect coordination.",
+      "syntax": "from threading import Thread",
+      "code": "from concurrent.futures import ThreadPoolExecutor\nwith ThreadPoolExecutor(max_workers=2) as pool:\n    print(sorted(pool.map(lambda x: x*x, [2, 3, 4])))",
+      "application": "Download multiple authorized resources concurrently.",
+      "tip": "The CPython GIL affects many CPU-bound threading workloads.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from concurrent.futures import ThreadPoolExecutor",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "with ThreadPoolExecutor(max_workers=2) as pool:",
+          "meaning": "Uses a context manager to acquire and reliably release a resource."
+        },
+        {
+          "line": 3,
+          "code": "    print(sorted(pool.map(lambda x: x*x, [2, 3, 4])))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Threads share process memory and are useful for overlapping I/O-bound work. Race conditions arise when operations on shared state interleave. Locks and queues can protect coordination.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Download multiple authorized resources concurrently.",
+        "Correctness and debugging: The CPython GIL affects many CPU-bound threading workloads. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-07",
+      "unit": 5,
+      "title": "Green Threads and gevent",
+      "overview": "Greenlets provide cooperative scheduling; gevent supplies an event loop and greenlet tools. Scheduling depends on explicit or monkey-patched blocking operations; contrast with preemptive threads.",
+      "syntax": "import gevent\ngevent.spawn(work)",
+      "code": "def explain():\n    return \"gevent uses cooperative greenlets\"\nprint(explain())",
+      "application": "Design event-driven I/O applications with numerous connections.",
+      "tip": "gevent is an external package and cannot be assumed available in the browser.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def explain():",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    return \"gevent uses cooperative greenlets\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 3,
+          "code": "print(explain())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Greenlets provide cooperative scheduling; gevent supplies an event loop and greenlet tools. Scheduling depends on explicit or monkey-patched blocking operations; contrast with preemptive threads.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Design event-driven I/O applications with numerous connections.",
+        "Correctness and debugging: gevent is an external package and cannot be assumed available in the browser. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-08",
+      "unit": 5,
+      "title": "Twisted Event-Driven Networking",
+      "overview": "Twisted is an event-driven network programming framework built around reactors, protocols and deferred results. It integrates asynchronous I/O with callback-based or coroutine-compatible designs.",
+      "syntax": "from twisted.internet import reactor",
+      "code": "def describe():\n    return \"Twisted reactor drives asynchronous events\"\nprint(describe())",
+      "application": "Build an event-based network monitor.",
+      "tip": "Twisted requires a compatible Python runtime and external package.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def describe():",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    return \"Twisted reactor drives asynchronous events\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 3,
+          "code": "print(describe())",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Twisted is an event-driven network programming framework built around reactors, protocols and deferred results. It integrates asynchronous I/O with callback-based or coroutine-compatible designs.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build an event-based network monitor.",
+        "Correctness and debugging: Twisted requires a compatible Python runtime and external package. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-09",
+      "unit": 5,
+      "title": "Redis and Messaging",
+      "overview": "Redis is an in-memory data system used for caching, queues and publish-subscribe messaging. Producers and consumers exchange messages via external Redis servers; persistence depends on configuration.",
+      "syntax": "import redis\nr = redis.Redis(host=\"localhost\")",
+      "code": "def cache_key(course, unit):\n    return f\"course:{course}:unit:{unit}\"\nprint(cache_key(\"python\", 5))",
+      "application": "Queue quiz-result emails and cache frequently accessed lessons.",
+      "tip": "A running Redis server is required for actual network operations.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "def cache_key(course, unit):",
+          "meaning": "Declares a reusable function or method, with parameters describing its inputs."
+        },
+        {
+          "line": 2,
+          "code": "    return f\"course:{course}:unit:{unit}\"",
+          "meaning": "Returns the computed expression to the function caller."
+        },
+        {
+          "line": 3,
+          "code": "print(cache_key(\"python\", 5))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Redis is an in-memory data system used for caching, queues and publish-subscribe messaging. Producers and consumers exchange messages via external Redis servers; persistence depends on configuration.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Queue quiz-result emails and cache frequently accessed lessons.",
+        "Correctness and debugging: A running Redis server is required for actual network operations. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-10",
+      "unit": 5,
+      "title": "Network Communication Patterns",
+      "overview": "Common communication patterns include request-response, client-server, messaging and publish-subscribe. They differ in coupling, delivery guarantees, latency and scaling behaviour.",
+      "syntax": "request = {\"method\": \"GET\", \"path\": \"/api\"}",
+      "code": "request = {\"method\": \"GET\", \"path\": \"/courses\"}\nresponse = {\"status\": 200, \"body\": \"Python\"}\nprint(request[\"method\"], response[\"status\"])",
+      "application": "Select messaging patterns for assessment and notification workflows.",
+      "tip": "Understand retries, idempotency and delivery semantics in distributed systems.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "GET 200",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "request = {\"method\": \"GET\", \"path\": \"/courses\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "response = {\"status\": 200, \"body\": \"Python\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(request[\"method\"], response[\"status\"])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Common communication patterns include request-response, client-server, messaging and publish-subscribe. They differ in coupling, delivery guarantees, latency and scaling behaviour.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Select messaging patterns for assessment and notification workflows.",
+        "Correctness and debugging: Understand retries, idempotency and delivery semantics in distributed systems. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-11",
+      "unit": 5,
+      "title": "Publish–Subscribe Model",
+      "overview": "A publisher sends messages to a named topic; subscribers receive events without direct knowledge of the publisher. A broker often manages delivery and subscriptions. Pub-sub enables event-driven architecture.",
+      "syntax": "publish(topic=\"results\", message=score)",
+      "code": "subscribers = {\"results\": [\"email\", \"analytics\"]}\nfor subscriber in subscribers[\"results\"]:\n    print(\"Notify\", subscriber)",
+      "application": "Trigger email and analytics updates when a quiz result is saved.",
+      "tip": "Publication is not the same as guaranteed delivery.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Notify email\nNotify analytics",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "subscribers = {\"results\": [\"email\", \"analytics\"]}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "for subscriber in subscribers[\"results\"]:",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 3,
+          "code": "    print(\"Notify\", subscriber)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A publisher sends messages to a named topic; subscribers receive events without direct knowledge of the publisher. A broker often manages delivery and subscriptions. Pub-sub enables event-driven architecture.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Trigger email and analytics updates when a quiz result is saved.",
+        "Correctness and debugging: Publication is not the same as guaranteed delivery. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-12",
+      "unit": 5,
+      "title": "TCP/IP Fundamentals",
+      "overview": "TCP provides a reliable ordered byte stream over IP network addressing. Ports identify transport endpoints, and applications frame their own messages. Compare TCP with UDP and consider timeouts.",
+      "syntax": "server_address = (\"localhost\", 8000)",
+      "code": "packet = {\"src\": \"client\", \"dst\": \"server\", \"port\": 8000}\nprint(packet[\"dst\"], packet[\"port\"])",
+      "application": "Explain how a learning portal communicates with its backend.",
+      "tip": "Do not assume TCP preserves application message boundaries.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "server 8000",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "packet = {\"src\": \"client\", \"dst\": \"server\", \"port\": 8000}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "print(packet[\"dst\"], packet[\"port\"])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: TCP provides a reliable ordered byte stream over IP network addressing. Ports identify transport endpoints, and applications frame their own messages. Compare TCP with UDP and consider timeouts.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Explain how a learning portal communicates with its backend.",
+        "Correctness and debugging: Do not assume TCP preserves application message boundaries. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-13",
+      "unit": 5,
+      "title": "Sockets",
+      "overview": "A socket represents an endpoint for networking. TCP servers commonly bind, listen and accept; clients connect and exchange bytes. Robust code handles framing, timeouts and cleanup.",
+      "syntax": "import socket\nsocket.socket(socket.AF_INET, socket.SOCK_STREAM)",
+      "code": "import socket\nprint(socket.AF_INET == socket.AddressFamily.AF_INET)\nprint(\"Actual client/server connections need local Python\")",
+      "application": "Build a simple client-server echo laboratory exercise.",
+      "tip": "Browsers cannot create arbitrary native TCP sockets through Pyodide.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import socket",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "print(socket.AF_INET == socket.AddressFamily.AF_INET)",
+          "meaning": "Displays the evaluated expression in standard output."
+        },
+        {
+          "line": 3,
+          "code": "print(\"Actual client/server connections need local Python\")",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: A socket represents an endpoint for networking. TCP servers commonly bind, listen and accept; clients connect and exchange bytes. Robust code handles framing, timeouts and cleanup.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Build a simple client-server echo laboratory exercise.",
+        "Correctness and debugging: Browsers cannot create arbitrary native TCP sockets through Pyodide. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-14",
+      "unit": 5,
+      "title": "ZeroMQ Messaging",
+      "overview": "ZeroMQ provides socket-like messaging abstractions including REQ/REP and PUB/SUB patterns. It is a messaging library, not an independent broker by default. Proper socket lifecycle is essential.",
+      "syntax": "import zmq\nctx = zmq.Context()",
+      "code": "patterns = [\"REQ/REP\", \"PUB/SUB\", \"PUSH/PULL\"]\nprint(\", \".join(patterns))",
+      "application": "Prototype distributed logging and sensor-data streams.",
+      "tip": "pyzmq and supporting native interfaces are not provided in the browser demo.",
+      "mode": "local",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "Requires a compatible local/server Python environment; not executed in the browser playground.",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "patterns = [\"REQ/REP\", \"PUB/SUB\", \"PUSH/PULL\"]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "print(\", \".join(patterns))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: ZeroMQ provides socket-like messaging abstractions including REQ/REP and PUB/SUB patterns. It is a messaging library, not an independent broker by default. Proper socket lifecycle is essential.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Prototype distributed logging and sensor-data streams.",
+        "Correctness and debugging: pyzmq and supporting native interfaces are not provided in the browser demo. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-15",
+      "unit": 5,
+      "title": "Internet Services",
+      "overview": "Internet services rely on protocols such as DNS, HTTP, SMTP and SSH. Applications must handle resolution, secure transport, authentication and failure conditions correctly.",
+      "syntax": "from urllib.parse import urlparse",
+      "code": "from urllib.parse import urlparse\nurl = urlparse(\"https://example.org/learn?q=python\")\nprint(url.scheme, url.hostname, url.path)",
+      "application": "Explain domain resolution and secure course material retrieval.",
+      "tip": "Never transmit passwords or personal records over insecure plaintext channels.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "https example.org /learn",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "from urllib.parse import urlparse",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "url = urlparse(\"https://example.org/learn?q=python\")",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(url.scheme, url.hostname, url.path)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Internet services rely on protocols such as DNS, HTTP, SMTP and SSH. Applications must handle resolution, secure transport, authentication and failure conditions correctly.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Explain domain resolution and secure course material retrieval.",
+        "Correctness and debugging: Never transmit passwords or personal records over insecure plaintext channels. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-16",
+      "unit": 5,
+      "title": "Web Services and APIs",
+      "overview": "API clients exchange structured requests and responses. Design includes paths, verbs, status codes, authentication and versioning. Asynchronous systems require retries and idempotent processing where appropriate.",
+      "syntax": "import json\njson.dumps({\"status\": \"ok\"})",
+      "code": "import json\nmessage = {\"event\": \"quiz.completed\", \"score\": 9}\nprint(json.dumps(message, sort_keys=True))",
+      "application": "Design the backend responsible for secure quiz submissions.",
+      "tip": "Do not expose secrets in browser-executed code.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "{\"event\": \"quiz.completed\", \"score\": 9}",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "import json",
+          "meaning": "Imports an existing module or selected definitions for reuse."
+        },
+        {
+          "line": 2,
+          "code": "message = {\"event\": \"quiz.completed\", \"score\": 9}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(json.dumps(message, sort_keys=True))",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: API clients exchange structured requests and responses. Design includes paths, verbs, status codes, authentication and versioning. Asynchronous systems require retries and idempotent processing where appropriate.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Design the backend responsible for secure quiz submissions.",
+        "Correctness and debugging: Do not expose secrets in browser-executed code. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-17",
+      "unit": 5,
+      "title": "Remote Processing",
+      "overview": "Remote processing delegates computation to another machine through an API, RPC or job queue. Consider authorization, resource limits, network failures and reproducibility.",
+      "syntax": "job = {\"task\": \"grade\", \"id\": 42}",
+      "code": "job = {\"task\": \"aggregate\", \"status\": \"queued\"}\njob[\"status\"] = \"complete\"\nprint(job[\"status\"])",
+      "application": "Offload heavy data analysis from student browsers.",
+      "tip": "Arbitrary Python sent to a server must execute in a separately isolated sandbox.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "complete",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "job = {\"task\": \"aggregate\", \"status\": \"queued\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "job[\"status\"] = \"complete\"",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "print(job[\"status\"])",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Remote processing delegates computation to another machine through an API, RPC or job queue. Consider authorization, resource limits, network failures and reproducibility.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Offload heavy data analysis from student browsers.",
+        "Correctness and debugging: Arbitrary Python sent to a server must execute in a separately isolated sandbox. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-18",
+      "unit": 5,
+      "title": "Big Data and MapReduce",
+      "overview": "MapReduce divides computation into mapping records to intermediate keys/values and reducing grouped values. It illustrates distributed processing; many modern systems also use streaming and in-memory engines.",
+      "syntax": "map(x) -> (key, value)\nreduce(key, values) -> result",
+      "code": "records = [(\"Python\", 1), (\"AI\", 1), (\"Python\", 1)]\ncounts = {}\nfor course, n in records:\n    counts[course] = counts.get(course, 0) + n\nprint(counts)",
+      "application": "Count engagement events across many course logs.",
+      "tip": "This small example illustrates map-reduce logic, not a distributed cluster.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "{'Python': 2, 'AI': 1}",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "records = [(\"Python\", 1), (\"AI\", 1), (\"Python\", 1)]",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "counts = {}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 3,
+          "code": "for course, n in records:",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 4,
+          "code": "    counts[course] = counts.get(course, 0) + n",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 5,
+          "code": "print(counts)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: MapReduce divides computation into mapping records to intermediate keys/values and reducing grouped values. It illustrates distributed processing; many modern systems also use streaming and in-memory engines.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Count engagement events across many course logs.",
+        "Correctness and debugging: This small example illustrates map-reduce logic, not a distributed cluster. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    },
+    {
+      "id": "u5-19",
+      "unit": 5,
+      "title": "Working in the Cloud",
+      "overview": "Cloud platforms provide on-demand compute, storage and managed services. Compare IaaS, PaaS and SaaS; consider cost, data location, scalability, identity management and monitoring.",
+      "syntax": "service = {\"compute\": \"managed\", \"storage\": \"object\"}",
+      "code": "models = {\"IaaS\": \"VMs\", \"PaaS\": \"App hosting\", \"SaaS\": \"Ready app\"}\nfor model, example in models.items():\n    print(model, example)",
+      "application": "Deploy a course portal using HTTPS hosting and managed authentication.",
+      "tip": "Cloud services still require access control, backups and monitoring.",
+      "mode": "browser",
+      "chapter": "Chapters 10–11",
+      "outcome": "CO5",
+      "output": "IaaS VMs\nPaaS App hosting\nSaaS Ready app",
+      "walkthrough": [
+        {
+          "line": 1,
+          "code": "models = {\"IaaS\": \"VMs\", \"PaaS\": \"App hosting\", \"SaaS\": \"Ready app\"}",
+          "meaning": "Evaluates the right-hand expression and binds or updates the target name/attribute."
+        },
+        {
+          "line": 2,
+          "code": "for model, example in models.items():",
+          "meaning": "Iterates over the source iterable, assigning a new value to the loop target each iteration."
+        },
+        {
+          "line": 3,
+          "code": "    print(model, example)",
+          "meaning": "Displays the evaluated expression in standard output."
+        }
+      ],
+      "studyGuide": [
+        "Core principle: Cloud platforms provide on-demand compute, storage and managed services. Compare IaaS, PaaS and SaaS; consider cost, data location, scalability, identity management and monitoring.",
+        "Implementation strategy: use the syntax pattern, identify inputs and expected output, then adapt the sample program to this authentic context: Deploy a course portal using HTTPS hosting and managed authentication.",
+        "Correctness and debugging: Cloud services still require access control, backups and monitoring. Trace intermediate values and test ordinary, boundary and invalid inputs wherever applicable."
+      ]
+    }
+  ],
+  "contemporary": "Expert lectures, online seminars and webinars (2 hours)."
+}

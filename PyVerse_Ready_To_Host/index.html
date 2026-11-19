@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PyVerse — syllabus-aligned interactive Python Programming learning portal for M.Sc. Computer Science students.">
+  <title>PyVerse | Interactive Python Learning Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#/home"><span class="brand-mark">{ Py }</span><span>PY<span class="brand-accent">VERSE</span><small>LEARNING HUB</small></span></a>
+    <div class="side-caption">LEARN</div>
+    <nav id="sideNav">
+      <a data-page="home" href="#/home"><span class="nav-ico">⌂</span> Overview</a>
+      <a data-page="units" href="#/units"><span class="nav-ico">◈</span> Five units</a>
+      <a data-page="playground" href="#/playground"><span class="nav-ico">⌘</span> Python playground</a>
+      <a data-page="animations" href="#/animations"><span class="nav-ico">▷</span> Visual learning</a>
+      <a data-page="presentations" href="#/presentations"><span class="nav-ico">▤</span> Presentations</a>
+      <a data-page="mindmap" href="#/mindmap"><span class="nav-ico">⋈</span> Mind maps</a>
+      <div class="side-caption">PRACTICE & COLLABORATE</div>
+      <a data-page="quiz" href="#/quiz"><span class="nav-ico">◉</span> Quiz arena</a>
+      <a data-page="questionbank" href="#/questionbank"><span class="nav-ico">▣</span> Question bank</a>
+      <a data-page="forum" href="#/forum"><span class="nav-ico">☷</span> Discussions</a>
+      <a data-page="progress" href="#/progress"><span class="nav-ico">◷</span> My progress</a>
+    </nav>
+    <div class="sidebar-end"><div class="faculty-avatar">DK</div><div><strong>Dr. D. Karthika</strong><small>Faculty • School of Computing</small></div></div>
+  </aside>
+  <div class="app-area">
+    <header class="topbar">
+      <button class="icon-button mobile-nav" id="toggleNav" aria-label="Open navigation">☰</button>
+      <div class="breadcrumb" id="breadcrumb">Course overview</div>
+      <div class="topbar-right"><span class="status-pill" id="modeTag">LOCAL PREVIEW</span><button class="icon-button" id="themeToggle" title="Toggle colour theme">◐</button><button class="login-button" id="accountButton">Sign in / Account</button></div>
+    </header>
+    <main class="main" id="app" aria-live="polite"><div class="loading-card">Loading your Python learning hub...</div></main>
+    <footer class="footer">PyVerse · VET Institute of Arts and Science · M.Sc. CS 2026–2027 · Designed for accessible, active learning</footer>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="accountDialog" class="dialog"><form method="dialog"><div class="modal-head"><h2>Student account</h2><button class="plain" value="cancel" aria-label="Close">✕</button></div></form><div id="accountBody"></div></dialog>
+<script>
+// Browsers block module imports, JSON fetches and workers when opened via file://.
+// This static guard must be an ordinary script: module code itself cannot start on file://.
+if (location.protocol === 'file:') {
+  document.addEventListener('DOMContentLoaded', function () {
+    var area = document.getElementById('app');
+    if (area) area.innerHTML = '<div class="card" style="max-width:850px;margin:24px auto;padding:32px;line-height:1.7"><h1 style="margin-top:0">Open PyVerse using the Windows launcher</h1><p>The webpage files were opened using <code>file://</code>. Microsoft Edge blocks reading the course data and starting Python workers from local files, so the learning portal cannot initialise.</p><p><strong>To fix this:</strong> go back to the extracted ZIP folder (the folder that contains the <code>web</code> folder), and double-click <code>START_PYVERSE_WINDOWS.bat</code>.</p><p>The launcher will open <strong>http://127.0.0.1:8765/</strong> in your browser. Keep its black terminal window open while using PyVerse.</p><p style="color:#64748b">This is a local preview. Shared discussions and quiz-result emails still require Firebase configuration and hosting.</p></div>';
+    var pill = document.getElementById('modeTag'); if (pill) pill.textContent='FILE MODE: NOT SUPPORTED';
+  });
+}
+</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
